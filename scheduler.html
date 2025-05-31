@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fbfa] group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f2ec] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e1a13]">
+            <h2 class="text-[#0e1a13] text-2xl font-bold leading-tight tracking-[-0.015em]">nala</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Settings</a>
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Integrations</a>
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Scheduler</a>
+              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Chat</a>
+            </div>
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTCjwYdeb0V30FctksR0oIEytwik9Xa97D4cZtlY5PwtDQxZE-8JaXeeYujc-X4Iua3kWJQ3AmJf0rXx9CGFuER-luOHRAHaxAm7dJMzlO2tDrYWZ_nRdBLBj9_5Ysf3cP1rFHMLPSVWehwjaEIfqMQE1kNpfmwaqyjHFuC8azijaz3nRlO1PFr3NIXrWSm9NwlJuMED4LltyIEqvz2zL1rvn91XaJap_bfH1tsC0kZE9VQlISdRtO7sJ8UQmYbYzYYOI75XOtFWo");'></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e1a13] tracking-light text-[32px] font-bold leading-tight">Schedule</p>
+                <p class="text-[#51946b] text-sm font-normal leading-normal">Plan your study sessions and manage your workload.</p>
+              </div>
+            </div>
+
+            <!-- Date Selection -->
+            <div class="flex flex-col gap-4 p-4">
+              <div class="flex flex-col gap-2">
+                <label class="text-[#0e1a13] text-sm font-medium leading-normal">Date Range</label>
+                <div class="flex gap-4">
+                  <input type="date" class="form-input rounded-xl border border-[#d1e6d9] bg-[#f8fbfa] text-[#0e1a13] focus:border-[#d1e6d9] focus:outline-0 focus:ring-0 px-4 py-2" />
+                  <input type="date" class="form-input rounded-xl border border-[#d1e6d9] bg-[#f8fbfa] text-[#0e1a13] focus:border-[#d1e6d9] focus:outline-0 focus:ring-0 px-4 py-2" />
+                </div>
+              </div>
+
+              <!-- Class Selection -->
+              <div class="flex flex-col gap-2">
+                <label class="text-[#0e1a13] text-sm font-medium leading-normal">Select Classes</label>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex items-center gap-3 p-3 rounded-xl border border-[#d1e6d9] bg-[#f8fbfa]">
+                    <input type="checkbox" class="form-checkbox rounded border-[#d1e6d9] text-[#51946b] focus:ring-[#51946b]" />
+                    <div class="flex flex-col">
+                      <p class="text-[#0e1a13] text-base font-medium leading-normal">Introduction to Psychology</p>
+                      <p class="text-[#51946b] text-sm font-normal leading-normal">Dr. Marcus Cole</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 p-3 rounded-xl border border-[#d1e6d9] bg-[#f8fbfa]">
+                    <input type="checkbox" class="form-checkbox rounded border-[#d1e6d9] text-[#51946b] focus:ring-[#51946b]" />
+                    <div class="flex flex-col">
+                      <p class="text-[#0e1a13] text-base font-medium leading-normal">World History</p>
+                      <p class="text-[#51946b] text-sm font-normal leading-normal">Dr. Olivia Bennett</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 p-3 rounded-xl border border-[#d1e6d9] bg-[#f8fbfa]">
+                    <input type="checkbox" class="form-checkbox rounded border-[#d1e6d9] text-[#51946b] focus:ring-[#51946b]" />
+                    <div class="flex flex-col">
+                      <p class="text-[#0e1a13] text-base font-medium leading-normal">Organic Chemistry</p>
+                      <p class="text-[#51946b] text-sm font-normal leading-normal">Dr. Samuel Hayes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Workload Selection -->
+              <div class="flex flex-col gap-2">
+                <label class="text-[#0e1a13] text-sm font-medium leading-normal">Workload per Day</label>
+                <div class="flex gap-4">
+                  <select class="form-select rounded-xl border border-[#d1e6d9] bg-[#f8fbfa] text-[#0e1a13] focus:border-[#d1e6d9] focus:outline-0 focus:ring-0 px-4 py-2">
+                    <option>1 hour</option>
+                    <option>2 hours</option>
+                    <option>3 hours</option>
+                    <option>4 hours</option>
+                    <option>5 hours</option>
+                    <option>6 hours</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Extra Considerations -->
+              <div class="flex flex-col gap-2">
+                <label class="text-[#0e1a13] text-sm font-medium leading-normal">Extra Considerations</label>
+                <textarea 
+                  class="form-textarea rounded-xl border border-[#d1e6d9] bg-[#f8fbfa] text-[#0e1a13] focus:border-[#d1e6d9] focus:outline-0 focus:ring-0 px-4 py-2 min-h-[100px]"
+                  placeholder="Add any additional notes or considerations for your study schedule..."
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex justify-end mt-4">
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[#51946b] text-white text-sm font-medium leading-normal w-fit">
+                  <span class="truncate">Generate Schedule</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
